@@ -1,0 +1,10 @@
+### get all dbs
+GET http://localhost:8080/api/dbs
+
+### save a register
+POST http://localhost:8080/api/dbs/agregar
+Content-Type: application/json
+
+{
+  "nombre": "Maguire"
+}

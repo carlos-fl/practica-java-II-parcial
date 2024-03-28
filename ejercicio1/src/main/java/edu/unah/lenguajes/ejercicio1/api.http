@@ -1,0 +1,16 @@
+### create user
+POST http://localhost:8080/api/usuarios/create 
+Content-Type: application/json
+
+{
+  "codigoUsuario": "0800201008011",
+  "nombre": "fulanito",
+  "apellido": "panamericano",
+  "departamento": "FM",
+  "correo": "fulanito@gmail.com",
+  "telefono": "99999999",
+  "perfil": {
+    "rol": "h",
+    "desc": "p"
+  }
+}

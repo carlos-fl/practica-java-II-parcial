@@ -1,0 +1,46 @@
+### create an employee
+POST http://localhost:8080/api/empleado/crear
+Content-Type: application/json
+
+{
+  "dni": "0801-2004-15962",
+  "nombre": "Carlos",
+  "fechaIngreso": "2024-07-07",
+  "apellido": "Messi",
+  "historial": [{
+    "horasTrabajadas": 60,
+    "precioPorHora": 8,
+    "sueldoTotal": 480,
+    "fechaPago": "2024-07-30"
+  }]
+}
+
+### delete empleado
+DELETE http://localhost:8080/api/empleado/eliminar/0221-2001-10002
+
+### find employee
+GET http://localhost:8080/api/empleado/0801-2004-15962
+
+
+### get all employees
+GET http://localhost:8080/api/empleados
+
+### obtiene pago en fecha dada
+POST http://localhost:8080/api/empleado/fecha
+Content-Type: application/json
+
+{
+  "idEmpleado": "0801-2004-15962",
+  "fechaInicio": "2024-01-01",
+  "fechaFin": "2024-12-30"
+}
+
+### crea un pago
+POST http://localhost:8080/api/pagos/crear
+Content-Type: application/json
+
+{
+  "idEmpleado": "0801-2004-15962",
+  "horasTrabajadas": 70,
+  "precioPorHora": 10
+}

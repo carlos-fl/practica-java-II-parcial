@@ -1,0 +1,17 @@
+### create a club
+POST http://localhost:8080/api/club/crear 
+Content-Type: application/json
+
+{
+  "id": "001",
+  "liga": "premier",
+  "nombre": "chelsea",
+  "players": [{
+    "id": "102007",
+    "edad": 21,
+    "nombre": "palmer"
+  }]
+}
+
+### get all clubs
+GET http://localhost:8080/api/clubs
