@@ -1,0 +1,27 @@
+### crear tipo residencias
+POST http://localhost:8080/api/residencias/tipos/crear
+Content-Type: application/json
+
+{
+  "descripcion": "edificio",
+  "precioKw": 5.48
+}
+
+### crea abonados
+POST http://localhost:8080/api/abonados/crear
+Content-Type: application/json
+
+{
+  "dni": "080119902024",
+  "nombre": "mikkel",
+  "apellido": "hansen",
+  "telefono": "99887766",
+  "tiposResidencia": {
+    "descripcion": "residencial",
+    "precioKw": 4.56
+  },
+  "facturacion": []
+}
+
+### obtiene abonado
+GET 
