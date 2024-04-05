@@ -1,0 +1,58 @@
+### create cliente
+POST http://localhost:8080/api/cliente/crear
+Content-Type: application/json
+
+{
+  "nombre": "lucas",
+  "apellido": "flores",
+  "fechaIngreso": "2024-04-04",
+  "tipoCliente": {
+    "descripcion": "A"
+  }
+}
+
+### obtener clientes
+GET http://localhost:8080/api/clientes
+
+### obtener cliente por id
+GET http://localhost:8080/api/clientes/1
+
+### crear vehiculo
+POST http://localhost:8080/api/vehiculo/crear
+Content-Type: application/json
+
+{
+  "marca": "honda",
+  "anio": 2012,
+  "disponible": true,
+  "tipoVehiculo": {
+    "descripcion": "honda",
+    "precioXHora": 17.6
+  }
+}
+
+### obtener lista de vehiculos
+GET http://localhost:8080/api/vehiculos
+
+### obtener vehiculo por id
+GET http://localhost:8080/api/vehiculos/4
+
+### crea un tipoCliente
+POST http://localhost:8080/api/tipoclientes/crear
+Content-Type: application/json
+
+{
+  "descripcion": "b"
+}
+
+### crea un tipovehiculo
+POST http://localhost:8080/api/tipovehiculos/crear
+Content-Type: application/json
+
+{
+  "descripcion": "bmw",
+  "precioXHora": 40.5
+}
+
+### crea reserva
+POST http://localhost:8080/api/reservas/crear

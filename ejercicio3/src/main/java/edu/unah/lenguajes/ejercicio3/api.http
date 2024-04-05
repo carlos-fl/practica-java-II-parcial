@@ -12,11 +12,12 @@ POST http://localhost:8080/api/abonados/crear
 Content-Type: application/json
 
 {
-  "dni": "080119902024",
-  "nombre": "mikkel",
-  "apellido": "hansen",
-  "telefono": "99887766",
+  "dni": "080120021990",
+  "nombre": "thomas",
+  "apellido": "edison",
+  "telefono": "88673324",
   "tiposResidencia": {
+    "idTipoResidencia": 1,
     "descripcion": "residencial",
     "precioKw": 4.56
   },
@@ -24,4 +25,4 @@ Content-Type: application/json
 }
 
 ### obtiene abonado
-GET 
+GET http://localhost:8080/api/abonados/080119902024 

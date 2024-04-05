@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
@@ -26,7 +25,7 @@ public class Abonado {
 
   @JsonBackReference
   @JoinColumn(name="idtiporesidencia", referencedColumnName="idtiporesidencia")
-  @ManyToOne(cascade=CascadeType.ALL)
+  @ManyToOne
   private TiposResidencia tiposResidencia;
 
   @OneToMany(mappedBy="abonado")
