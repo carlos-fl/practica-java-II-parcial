@@ -55,4 +55,5 @@ Content-Type: application/json
 }
 
 ### crea reserva
-POST http://localhost:8080/api/reservas/crear
+POST http://localhost:8080/api/reservas/crear?idCliente=55&idVehiculo=4&dias=3
+Content-Type: application/json
